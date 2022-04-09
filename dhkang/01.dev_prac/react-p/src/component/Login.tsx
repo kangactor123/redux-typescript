@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { IUserInfo } from "../interface";
 import { UserState } from "../reducer";
 import { login } from "../slicer/userSlice";
+import { Button } from "../styles/loginStyles";
 
 function Login() {
   const [id, setId] = useState("");
@@ -29,9 +30,9 @@ function Login() {
         id,
         pwd,
         name: "dh",
-        age:28,
-        addr:"seoul"
-      }
+        age: 28,
+        addr: "seoul",
+      };
     });
   };
   const handleChangeId = (event: React.FormEvent<HTMLInputElement>) => {
@@ -57,10 +58,10 @@ function Login() {
           <label>PWD</label>&nbsp;&nbsp;&nbsp;
           <input onChange={handleChangePwd} />
           <br />
-          <button>Login</button>
+          <Button>Login</Button>
         </form>
         <br />
-        <button onClick={handleCheck}>checkState</button>
+        <Button onClick={handleCheck}>checkState</Button>
       </div>
       <div style={{ marginTop: 50 }}>
         {person !== undefined && (

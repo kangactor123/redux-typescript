@@ -14,6 +14,7 @@
     "react-dom": "^18.0.0",
     "react-redux": "^7.2.8",
     "react-scripts": "5.0.0",
+    "styled-components": "^5.3.5",
     "typescript": "^4.6.3",
     "web-vitals": "^2.1.4"
   },
@@ -42,6 +43,18 @@
     ]
   },
   "devDependencies": {
-    "@types/react-dom": "^18.0.0"
-  }
+    "@types/react-dom": "^18.0.0",
+    "@types/styled-components": "^5.1.25"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "react-p"
+  },
+  "keywords": [
+    "redux"
+  ],
+  "author": "dhkang",
+  "license": "MIT"
 }
